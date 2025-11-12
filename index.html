@@ -1,345 +1,330 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    span.s1 {font-kerning: none}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarun Akula Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(120deg, #1e293b, #0f172a);
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.08);
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      backdrop-filter: blur(8px);
+    }
+
+    header h1 {
+      margin: 0;
+      color: #60a5fa;
+      font-weight: 800;
+      font-size: 1.4rem;
+    }
+
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 1rem 2rem;
+    }
+
+    .hero-text {
+      flex: 1 1 400px;
+      padding-right: 2rem;
+    }
+
+    .hero-text h2 {
+      color: #60a5fa;
+      font-size: 2.2rem;
+      margin: 0 0 0.5rem;
+    }
+
+    .hero-text p {
+      color: #94a3b8;
+    }
+
+    .hero img {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 40px rgba(37, 99, 235, 0.4);
+      transition: transform 0.5s ease;
+    }
+
+    .hero img:hover {
+      transform: scale(1.05);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background: linear-gradient(90deg, #4f46e5, #06b6d4);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+      transform: scale(1.03);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 1rem 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #60a5fa;
+      margin-bottom: 1rem;
+    }
+
+    .skills, .projects, .certificates, .tools {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 1rem;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .cert-card {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      color: #94a3b8;
+      margin: 3rem 0;
+    }
+
+    a.certificate-btn {
+      display: inline-block;
+      background: #06b6d4;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    a.certificate-btn:hover {
+      background: #4f46e5;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 0 8px;
+      color: #60a5fa;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      color: #38bdf8;
+    }
   </style>
 </head>
 <body>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b>&lt;!DOCTYPE html&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b>&lt;html lang="en"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b>&lt;head&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;title&gt;Tarun Akula Portfolio&lt;/title&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;style&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>body {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>margin: 0;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>font-family: 'Inter', sans-serif;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>background: linear-gradient(120deg, #1e293b, #0f172a);</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #f8fafc;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>line-height: 1.6;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>header {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>background: rgba(255, 255, 255, 0.08);</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>position: sticky;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>top: 0;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>display: flex;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>justify-content: space-between;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>align-items: center;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 1rem 2rem;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>backdrop-filter: blur(8px);</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>header h1 {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>margin: 0;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #60a5fa;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>font-weight: 800;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 1.4rem;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>nav a {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #cbd5e1;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>text-decoration: none;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>margin-left: 1rem;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>font-weight: 600;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>nav a:hover {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #38bdf8;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>.hero {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>display: flex;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>flex-wrap: wrap;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>align-items: center;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>justify-content: space-between;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>max-width: 1000px;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>margin: 4rem auto;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 1rem 2rem;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>.hero-text {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>flex: 1 1 400px;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>padding-right: 2rem;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>.hero-text h2 {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #60a5fa;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 2.2rem;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>margin: 0 0 0.5rem;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>.hero-text p {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #94a3b8;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>.hero img {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>width: 280px;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>height: 280px;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>border-radius: 50%;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>object-fit: cover;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>box-shadow: 0 0 40px rgba(37, 99, 235, 0.4);</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>transition: transform 0.5s ease;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>.hero img:hover {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>transform: scale(1.05);</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>.btn {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>display: inline-block;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>margin-top: 1.5rem;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>background: linear-gradient(90deg, #4f46e5, #06b6d4);</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>color: white;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 10px 20px;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>border-radius: 8px;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>text-decoration: none;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>font-weight: 700;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>transition: 0.3s ease;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>.btn:hover {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>opacity: 0.9;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>transform: scale(1.03);</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>section {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>max-width: 1000px;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>margin: 3rem auto;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 1rem 2rem;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>background: rgba(255, 255, 255, 0.05);</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>border-radius: 10px;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>h2 {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #60a5fa;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>margin-bottom: 1rem;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>.skills, .projects, .certificates, .tools {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>display: grid;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>gap: 1rem;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>.card {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>background: rgba(255, 255, 255, 0.08);</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 1rem;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>border-radius: 8px;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>transition: transform 0.3s ease;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>.card:hover {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>transform: translateY(-6px);</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>.cert-card {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>text-align: center;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>footer {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>text-align: center;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #94a3b8;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>margin: 3rem 0;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>a.certificate-btn {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>display: inline-block;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>background: #06b6d4;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>color: white;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 6px 12px;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>border-radius: 6px;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>text-decoration: none;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>font-weight: 600;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 0.9rem;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>margin-top: 0.5rem;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>a.certificate-btn:hover {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>background: #4f46e5;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>.social-links a {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>display: inline-block;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>margin: 0 8px;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #60a5fa;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>font-weight: 600;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>text-decoration: none;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>.social-links a:hover {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #38bdf8;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/style&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b>&lt;/head&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b>&lt;body&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;header&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;h1&gt;Tarun Akula&lt;/h1&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;nav&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;a href="#about"&gt;About&lt;/a&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;a href="#education"&gt;Education&lt;/a&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;a href="#skills"&gt;Skills&lt;/a&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;a href="#tools"&gt;Tools&lt;/a&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;a href="#projects"&gt;Projects&lt;/a&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;a href="#certificates"&gt;Certificates&lt;/a&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;a href="#contact"&gt;Contact&lt;/a&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/nav&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/header&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;!-- Hero Section --&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;section class="hero"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div class="hero-text"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;h2&gt;Hi, I'm Tarun 👋&lt;/h2&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;p&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">        </span>I’m a passionate Web Developer &amp; Data Analyst who loves creating visually appealing, data-driven web applications.</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">        </span>My focus is on combining logical data insights with creative web design to deliver impactful solutions.</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/p&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;a class="btn" href="https://drive.google.com/file/d/1zhygK301isGYhK4t-AYucw6JB6AdQoM7/view?usp=sharing" target="_blank"&gt;View CV&lt;/a&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;img src="photo.png" alt="Tarun Akula"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/section&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;!-- About Section --&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;section id="about"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;h2&gt;About Me&lt;/h2&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;p&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>Hello! I'm &lt;strong&gt;Tarun Akula&lt;/strong&gt; — a Web Developer and aspiring Data Analyst currently pursuing my<span class="Apple-converted-space"> </span></b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;strong&gt;Master of Computer Applications (MCA)&lt;/strong&gt; at Lovely Professional University, Punjab.</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>I have a strong interest in creating web applications that combine elegant design with functional, data-driven insights.</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;br&gt;&lt;br&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>My technical journey began during my undergraduate studies, where I learned the foundations of programming, databases, and analytics.</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>Today, I enjoy exploring tools like Python, SQL, Power BI, and Tableau, and transforming data into clear, actionable insights.</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/p&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/section&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;!-- Education Section --&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;section id="education"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;h2&gt;Education&lt;/h2&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div class="card"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;h3&gt;Master of Computer Applications (MCA)&lt;/h3&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;strong&gt;Lovely Professional University, Punjab&lt;/strong&gt;&lt;/p&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;p&gt;Expected Graduation: 2026&lt;/p&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div class="card"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;h3&gt;Bachelor of Computer Applications (BCA)&lt;/h3&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;strong&gt;Andhra University, Visakhapatnam&lt;/strong&gt;&lt;/p&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;p&gt;Graduated: 2023&lt;/p&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div class="card"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;h3&gt;Secondary Education&lt;/h3&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;strong&gt;Narayana College&lt;/strong&gt;&lt;/p&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;p&gt;Completed: 2018&lt;/p&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/section&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;!-- Skills Section --&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;section id="skills"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;h2&gt;Skills&lt;/h2&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div class="skills"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;Python&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;Statistics &amp; Machine Learning&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;SQL &amp; MongoDB&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;HTML, CSS, JavaScript&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;Data Visualization &amp; Reporting&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/section&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;!-- Tools Section --&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;section id="tools"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;h2&gt;Tools&lt;/h2&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div class="tools"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;GitHub&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;Power BI&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;Tableau&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;VS Code&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;Excel&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/section&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;!-- Projects Section --&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;section id="projects"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;h2&gt;Projects&lt;/h2&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div class="projects"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;h3&gt;Student Management System&lt;/h3&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;p&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">          </span>A full-stack web application for managing student records efficiently.<span class="Apple-converted-space"> </span></b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">          </span>Includes CRUD operations, student progress tracking, and secure login for administrators.</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;br&gt;&lt;br&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;strong&gt;Technologies:&lt;/strong&gt; HTML, CSS, JavaScript, Python (Flask), SQLite <span class="Apple-converted-space"> </span></b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/p&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;a class="btn" href="https://student-management-system-s66s.onrender.com" target="_blank"&gt;View Project&lt;/a&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;h3&gt;Weather App&lt;/h3&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;p&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">          </span>A responsive web app that provides live weather updates using an external API.<span class="Apple-converted-space"> </span></b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">          </span>Displays temperature, humidity, and conditions dynamically for any city entered by the user.</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;br&gt;&lt;br&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;strong&gt;Technologies:&lt;/strong&gt; HTML, CSS, JavaScript, OpenWeather API <span class="Apple-converted-space"> </span></b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/p&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;a class="btn" href="https://tarun836.github.io/weather-app/" target="_blank"&gt;View Project&lt;/a&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;h3&gt;Meal Finder&lt;/h3&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;p&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">          </span>A web-based recipe explorer that allows users to search meals by ingredients, cuisine, or category.<span class="Apple-converted-space"> </span></b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">          </span>Integrates with the MealDB API for instant results.</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;br&gt;&lt;br&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;strong&gt;Technologies:&lt;/strong&gt; HTML, CSS, JavaScript, TheMealDB API <span class="Apple-converted-space"> </span></b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/p&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;a class="btn" href="https://tarun836.github.io/Meal-finder/" target="_blank"&gt;View Project&lt;/a&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/section&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;!-- Certificates Section --&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;section id="certificates"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;h2&gt;Certificates&lt;/h2&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div class="certificates"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="card cert-card"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;h3&gt;Python for Data Science&lt;/h3&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;p&gt;Issued by Learnbay • 12/12/2023&lt;br&gt;ID: 132fq8o&lt;/p&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;iframe src="data science.pdf#toolbar=0" width="100%" height="400px" style="border-radius:10px;border:none;"&gt;&lt;/iframe&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;a class="certificate-btn" href="data science.pdf" target="_blank"&gt;Download Certificate&lt;/a&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="card cert-card"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;h3&gt;SQL &amp; MongoDB&lt;/h3&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;p&gt;Issued by Learnbay • 11/07/2024&lt;br&gt;ID: 977oh8o&lt;/p&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;iframe src="sql and mongodb.pdf#toolbar=0" width="100%" height="400px" style="border-radius:10px;border:none;"&gt;&lt;/iframe&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;a class="certificate-btn" href="sql and mongodb.pdf" target="_blank"&gt;Download Certificate&lt;/a&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/section&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;!-- Contact Section --&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;section id="contact"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;h2&gt;Contact&lt;/h2&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;p&gt;Email: &lt;a href="mailto:tarunakula836@gmail.com" style="color:#38bdf8"&gt;tarunakula836@gmail.com&lt;/a&gt;&lt;/p&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;p&gt;GitHub: &lt;a href="https://github.com/TARUN836" style="color:#38bdf8" target="_blank"&gt;github.com/TARUN836&lt;/a&gt;&lt;/p&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;p&gt;LinkedIn: &lt;a href="https://www.linkedin.com/in/tarun-kumar-akula-6a289228a/" style="color:#38bdf8" target="_blank"&gt;linkedin.com/in/tarun-kumar-akula&lt;/a&gt;&lt;/p&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/section&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;!-- Footer --&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;footer&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div class="social-links"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;a href="https://github.com/TARUN836" target="_blank"&gt;GitHub&lt;/a&gt; |</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;a href="https://www.linkedin.com/in/tarun-kumar-akula-6a289228a/" target="_blank"&gt;LinkedIn&lt;/a&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;p&gt;© &lt;span id="year"&gt;&lt;/span&gt; Tarun Akula — Built with ❤️ using HTML&lt;/p&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/footer&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078); min-height: 20.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;script&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">    </span>document.getElementById("year").textContent = new Date().getFullYear();</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/script&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b>&lt;/body&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px Helvetica; color: #4f91f8; -webkit-text-stroke: #4f91f8; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)"><span class="s1"><b>&lt;/html&gt;</b></span></h1>
+  <header>
+    <h1>Tarun Akula</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#tools">Tools</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Hi, I'm Tarun 👋</h2>
+      <p>
+        I’m a passionate Web Developer & Data Analyst who loves creating visually appealing, data-driven web applications.
+        My focus is on combining logical data insights with creative web design to deliver impactful solutions.
+      </p>
+      <a class="btn" href="https://drive.google.com/file/d/1zhygK301isGYhK4t-AYucw6JB6AdQoM7/view?usp=sharing" target="_blank">View CV</a>
+    </div>
+    <img src="photo.png" alt="Tarun Akula">
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm <strong>Tarun Akula</strong> — a Web Developer and aspiring Data Analyst currently pursuing my 
+      <strong>Master of Computer Applications (MCA)</strong> at Lovely Professional University, Punjab.
+      I have a strong interest in creating web applications that combine elegant design with functional, data-driven insights.
+      <br><br>
+      My technical journey began during my undergraduate studies, where I learned the foundations of programming, databases, and analytics.
+      Today, I enjoy exploring tools like Python, SQL, Power BI, and Tableau, and transforming data into clear, actionable insights.
+    </p>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <h3>Master of Computer Applications (MCA)</h3>
+      <p><strong>Lovely Professional University, Punjab</strong></p>
+      <p>Expected Graduation: 2026</p>
+    </div>
+    <div class="card">
+      <h3>Bachelor of Computer Applications (BCA)</h3>
+      <p><strong>Andhra University, Visakhapatnam</strong></p>
+      <p>Graduated: 2023</p>
+    </div>
+    <div class="card">
+      <h3>Secondary Education</h3>
+      <p><strong>Narayana College</strong></p>
+      <p>Completed: 2018</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">Python</div>
+      <div class="card">Statistics & Machine Learning</div>
+      <div class="card">SQL & MongoDB</div>
+      <div class="card">HTML, CSS, JavaScript</div>
+      <div class="card">Data Visualization & Reporting</div>
+    </div>
+  </section>
+
+  <!-- Tools Section -->
+  <section id="tools">
+    <h2>Tools</h2>
+    <div class="tools">
+      <div class="card">GitHub</div>
+      <div class="card">Power BI</div>
+      <div class="card">Tableau</div>
+      <div class="card">VS Code</div>
+      <div class="card">Excel</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Student Management System</h3>
+        <p>
+          A full-stack web application for managing student records efficiently. 
+          Includes CRUD operations, student progress tracking, and secure login for administrators.
+          <br><br>
+          <strong>Technologies:</strong> HTML, CSS, JavaScript, Python (Flask), SQLite  
+        </p>
+        <a class="btn" href="https://student-management-system-s66s.onrender.com" target="_blank">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Weather App</h3>
+        <p>
+          A responsive web app that provides live weather updates using an external API. 
+          Displays temperature, humidity, and conditions dynamically for any city entered by the user.
+          <br><br>
+          <strong>Technologies:</strong> HTML, CSS, JavaScript, OpenWeather API  
+        </p>
+        <a class="btn" href="https://tarun836.github.io/weather-app/" target="_blank">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Meal Finder</h3>
+        <p>
+          A web-based recipe explorer that allows users to search meals by ingredients, cuisine, or category. 
+          Integrates with the MealDB API for instant results.
+          <br><br>
+          <strong>Technologies:</strong> HTML, CSS, JavaScript, TheMealDB API  
+        </p>
+        <a class="btn" href="https://tarun836.github.io/Meal-finder/" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <div class="certificates">
+      <div class="card cert-card">
+        <h3>Python for Data Science</h3>
+        <p>Issued by Learnbay • 12/12/2023<br>ID: 132fq8o</p>
+        <iframe src="data science.pdf#toolbar=0" width="100%" height="400px" style="border-radius:10px;border:none;"></iframe>
+        <a class="certificate-btn" href="data science.pdf" target="_blank">Download Certificate</a>
+      </div>
+      <div class="card cert-card">
+        <h3>SQL & MongoDB</h3>
+        <p>Issued by Learnbay • 11/07/2024<br>ID: 977oh8o</p>
+        <iframe src="sql and mongodb.pdf#toolbar=0" width="100%" height="400px" style="border-radius:10px;border:none;"></iframe>
+        <a class="certificate-btn" href="sql and mongodb.pdf" target="_blank">Download Certificate</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:tarunakula836@gmail.com" style="color:#38bdf8">tarunakula836@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/TARUN836" style="color:#38bdf8" target="_blank">github.com/TARUN836</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/tarun-kumar-akula-6a289228a/" style="color:#38bdf8" target="_blank">linkedin.com/in/tarun-kumar-akula</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-links">
+      <a href="https://github.com/TARUN836" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/tarun-kumar-akula-6a289228a/" target="_blank">LinkedIn</a>
+    </div>
+    <p>© <span id="year"></span> Tarun Akula — Built with ❤️ using HTML</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
